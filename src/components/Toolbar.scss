@@ -1,0 +1,11 @@
+.Toolbar {
+  border: solid 1px grey;
+  padding: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+
+  .selected {
+    font-weight: bold;
+    color: red;
+  }
+}
