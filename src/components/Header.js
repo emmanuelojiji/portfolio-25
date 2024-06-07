@@ -1,3 +1,4 @@
+import "./Header.scss";
 import Avatar from "../media/avatar.svg";
 import { Typewriter } from "react-simple-typewriter";
 import { useEffect, useState } from "react";
@@ -25,8 +26,6 @@ const Header = () => {
 
   const locationId = locationSplit[2];
 
-  
-
   useEffect(() => {
     if (!locationId) {
       updateMessage("Hey, welcome to my world of ideas!");
@@ -43,9 +42,9 @@ const Header = () => {
         <img src={Avatar} />
       </div>
       <div className="chat-right">
-        <h1 onClick={() => updateMessage()}>Emmanuel</h1>
+        <h1 className="text-medium">Emmanuel</h1>
 
-        <h2>Product Designer & Developer</h2>
+        <h2 className="text-small text-grey">Product Designer & Developer</h2>
         <div className="chat-bubble">
           {messageVisible && (
             <Typewriter words={[chatMessage]} typeSpeed={50} />

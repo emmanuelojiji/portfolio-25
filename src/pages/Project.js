@@ -15,6 +15,7 @@ const Project = () => {
   return (
     <>
       <h1>{project[0].name}</h1>
+      {project[0].component}
     </>
   );
 };

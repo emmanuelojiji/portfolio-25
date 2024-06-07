@@ -1,9 +1,12 @@
+import Sidekick from "./projects/Sidekick";
+
 const data = [
   {
     name: "Sidekick AI",
     desc: "Assistive AI tool",
     type: "case_studies",
     url: "sidekick-ai",
+    component: <Sidekick />,
   },
   {
     name: "Notes v2",
