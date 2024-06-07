@@ -53,7 +53,12 @@ const Toolbar = ({
         style={{ width: buttonWidth, left: sliderPos }}
       ></div>
       {buttons.map((button) => {
-        const buttonSplit = button.replaceAll("_", " ")
+        const buttonSplit = button.replaceAll("_", " ");
+
+        const projectCount = data.filter(
+          (project) => project.type === button
+        ).length;
+
         return (
           <button
             key={button}
@@ -68,6 +73,9 @@ const Toolbar = ({
             }}
           >
             {buttonSplit}
+            <span className="projectCount">
+              {button === "all" ? data.length : projectCount}
+            </span>
           </button>
         );
       })}
