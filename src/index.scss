@@ -2,17 +2,27 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter";
+  -webkit-font-smoothing: antialiased; /* For WebKit browsers */
+  -moz-osx-font-smoothing: grayscale; /* For Firefox */
+  font-smooth: always;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
 }
 html {
-  background-color: #fafafa;
+  background-color: #fcfcfc;
+}
+
+a{
+color: inherit;
 }
 
 .text-small {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .text-medium {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .text-large {
@@ -27,3 +37,16 @@ html {
   color: #e1e1e1;
 }
 
+.text-weight-bold {
+  font-weight: 700;
+}
+
+.text-weight-medium {
+  font-weight: 600;
+}
+
+
+
+.text-weight-thin {
+  font-weight: 300;
+}

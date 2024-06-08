@@ -42,15 +42,16 @@ const Header = () => {
         <img src={Avatar} />
       </div>
       <div className="chat-right">
-        <h1 className="text-medium">Emmanuel</h1>
+        <h1 className="text-small text-weight-medium">Emmanuel</h1>
 
-        <h2 className="text-small text-grey">Product Designer & Developer</h2>
-        <div className="chat-bubble">
+        <div className="chat-bubble text-small">
           {messageVisible && (
             <Typewriter words={[chatMessage]} typeSpeed={50} />
           )}
         </div>
       </div>
+
+      <button className="contact-button text-small">Get in Touch</button>
     </header>
   );
 };

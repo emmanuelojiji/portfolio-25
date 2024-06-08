@@ -73,9 +73,6 @@ const Toolbar = ({
             }}
           >
             {buttonSplit}
-            <span className="projectCount">
-              {button === "all" ? data.length : projectCount}
-            </span>
           </button>
         );
       })}

@@ -10,11 +10,9 @@ const Projects = () => {
 
   const [projects, setProjects] = useState(data);
 
-  const id = useParams();
-
   return (
     <>
-      <h1>Projects</h1>
+      <h1 className="title text-weight-bold text-medium">Portfolio</h1>
       <Toolbar
         selectedFilter={selectedFilter}
         setSelectedFilter={setSelectedFilter}
@@ -23,9 +21,11 @@ const Projects = () => {
       />
 
       <div className="projects-container">
-        {projects.map((project) => (
-          <Card name={project.name} desc={project.desc} id={project.url} />
-        ))}
+        <div className="projects-container-inner">
+          {projects.map((project) => (
+            <Card name={project.name} desc={project.desc} id={project.url} />
+          ))}
+        </div>
       </div>
     </>
   );
