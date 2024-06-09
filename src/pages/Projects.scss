@@ -18,7 +18,8 @@
 
 .projects-container-inner {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
   max-width: 1200px;
 }

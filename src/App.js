@@ -10,12 +10,14 @@ import Header from "./components/Header";
 function App() {
   return (
     <div className="App">
+
       <BrowserRouter>
         <Header />
         <Routes>
           <Route path="/" element={<Projects />} />
           <Route path="/project/:id" element={<Project />} />
         </Routes>
+        <footer>Designed & Built by Emmanuel</footer>
       </BrowserRouter>
     </div>
   );

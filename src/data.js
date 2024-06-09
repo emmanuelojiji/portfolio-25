@@ -1,3 +1,4 @@
+import NotesDocument from "./projects/NotesDocument";
 import Sidekick from "./projects/Sidekick";
 
 const data = [
@@ -32,6 +33,20 @@ const data = [
     desc: "Usability sessions with departments",
     type: "just_for_fun",
     url: "fun",
+  },
+  {
+    name: "Notes Screen Strategy Document",
+    desc: "Notes Screen Strategy document",
+    type: "documents",
+    url: "notes-strategy-document",
+    component: <NotesDocument />,
+  },
+  {
+    name: "EUA Website",
+    desc: "Notes Strategy document",
+    type: "audits",
+    url: "eua-website-audit",
+    component: <NotesDocument />,
   },
 ];
 

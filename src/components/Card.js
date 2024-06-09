@@ -7,8 +7,8 @@ const Card = ({ name, desc, id }) => {
     <Link to={`/project/${id}`}>
       <div className="Card">
         <div className="thumbnail"></div>
-        <h3>{name}</h3>
-        <p>{desc}</p>
+        <h3 className="text-small">{name}</h3>
+        <p className="text-small text-grey">{desc}</p>
       </div>
     </Link>
   );

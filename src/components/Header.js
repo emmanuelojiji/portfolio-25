@@ -29,15 +29,21 @@ const Header = () => {
   useEffect(() => {
     if (!locationId) {
       updateMessage("Hey, welcome to my world of ideas!");
-    } else if (locationId === "sidekick-ai") {
-      updateMessage("Ah Sidekick, one of my favourite projects!");
-    } else if (locationId === "fun") {
-      updateMessage("OMG fun!!!!!");
+      setOpacity(1)
+    } else if (locationId) {
+      setOpacity(0.5);
+      if (locationId === "sidekick-ai") {
+        updateMessage("This was a challenging project! But my team and I did a great job.");
+      } else if (locationId === "fun") {
+        updateMessage("OMG fun!!!!!");
+      }
     }
   }, [location]);
 
+  const [opacity, setOpacity] = useState(1);
+
   return (
-    <header>
+    <header style={{ opacity: opacity }}>
       <div className="avatar">
         <img src={Avatar} />
       </div>

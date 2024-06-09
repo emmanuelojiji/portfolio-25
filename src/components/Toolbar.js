@@ -43,6 +43,7 @@ const Toolbar = ({
     "case_studies",
     "audits",
     "front_end",
+    "documents",
     "just_for_fun",
   ];
 

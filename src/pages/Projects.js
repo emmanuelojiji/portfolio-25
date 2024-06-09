@@ -3,7 +3,6 @@ import Toolbar from "../components/Toolbar";
 import Card from "../components/Card";
 import data from "../data.js";
 import { useState } from "react";
-import { useParams } from "react-router-dom";
 
 const Projects = () => {
   const [selectedFilter, setSelectedFilter] = useState("all");
