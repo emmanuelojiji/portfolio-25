@@ -1,39 +1,32 @@
+import LyricLibrary from "./projects/lyric-library/LyricLibrary";
 import NotesDocument from "./projects/NotesDocument";
 import Sidekick from "./projects/Sidekick";
+import UsabilitySession from "./projects/usability-session/UsabilitySession";
+import UsabilitySurvey from "./projects/usability-survey/UsabilitySurvey";
+import usability_session_thumbnail from "./projects/usability-session/1.png";
+import usability_survey_thumbnail from "./projects/usability-survey/1.png";
+import lyric_library_thumbnail from "./projects/lyric-library/1.png";
+import jobs_kanban_board_thumbnail from "./projects/jobs-kanban-board/1.png";
+import JobsKanbanBoard from "./projects/jobs-kanban-board/JobsKanbanBoard";
 
 const data = [
   {
-    name: "Sidekick AI",
-    desc: "Assistive AI tool",
-    type: "case_studies",
-    url: "sidekick-ai",
-    component: <Sidekick />,
-  },
-  {
-    name: "Notes v2",
-    desc: "Place information against jobs",
-    type: "case_studies",
-    url: "notes-v2",
-  },
-  {
-    name: "Typeform Survey",
+    name: "VIEW Usability Session",
     desc: "Usability sessions with departments",
-    type: "audits",
-    url: "typeform-survey",
+    type: "research",
+    url: "view-usability-session",
+    component: <UsabilitySession />,
+    img: usability_session_thumbnail,
+  },
+  {
+    name: "VIEW Usability Survey",
+    desc: "Usability sessions with Typeform",
+    type: "research",
+    url: "view-usability-survey",
+    component: <UsabilitySurvey />,
+    img: usability_survey_thumbnail,
   },
 
-  {
-    name: "GOV UK",
-    desc: "Usability sessions with departments",
-    type: "front_end",
-    url: "gov-uk",
-  },
-  {
-    name: "FUN",
-    desc: "Usability sessions with departments",
-    type: "just_for_fun",
-    url: "fun",
-  },
   {
     name: "Notes Screen Strategy Document",
     desc: "Notes Screen Strategy document",
@@ -41,12 +34,30 @@ const data = [
     url: "notes-strategy-document",
     component: <NotesDocument />,
   },
+
   {
-    name: "EUA Website",
-    desc: "Notes Strategy document",
-    type: "audits",
-    url: "eua-website-audit",
-    component: <NotesDocument />,
+    name: "Lyric Library",
+    desc: "Lyric Library Exploration",
+    type: "explorations",
+    url: "lyric-library",
+    component: <LyricLibrary />,
+    img: lyric_library_thumbnail,
+  },
+  {
+    name: "Jobs Kanban Board",
+    desc: "Jobs kanban board",
+    type: "case_studies",
+    url: "jobs-kanban-board",
+    component: <JobsKanbanBoard />,
+    img: jobs_kanban_board_thumbnail,
+  },
+  {
+    name: "Sidekick AI Assistant",
+    desc: "AI Assistant which helps to source and price mechanical parts",
+    type: "case_studies",
+    url: "sidekick-ai-assistant",
+    component: <JobsKanbanBoard />,
+
   },
 ];
 

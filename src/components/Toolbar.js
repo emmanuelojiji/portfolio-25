@@ -42,9 +42,12 @@ const Toolbar = ({
     "all",
     "case_studies",
     "audits",
-    "front_end",
+    "research",
+    "explorations",
     "documents",
-    "just_for_fun",
+    "Personal",
+    "front_end",
+
   ];
 
   return (

@@ -1,17 +1,27 @@
-.Card{
-
-    h3{
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-
-.thumbnail {
-  height: 300px;
-  background: white;
-  width:100%;
+.Card {
+  overflow: hidden;
   border-radius: 10px;
-}
+  h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
 
+  .thumbnail {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+  }
 
-
+  img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    display: block;
+    
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
 }

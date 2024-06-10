@@ -4,12 +4,15 @@ header {
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 1200px;
+  max-width: calc(1200px + 10%);
+  padding-left: 5%;
+  padding-right: 5%;
+
   margin: 0 auto;
-  transition: 1s ease-in-out;
+  transition: 0.5s ease-in-out;
 
   @media only screen and (max-width: 600px) {
-  opacity: 1 !important;
+    opacity: 1 !important;
   }
 
   &:hover {

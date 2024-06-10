@@ -82,6 +82,85 @@ const NotesDocument = () => {
           }
         />
       </ContentBlock>
+
+      <ContentBlock>
+        <TextBlock
+          heading="Whitesapce"
+          text={
+            <p>
+              Whitespace is an effective approach to creating an easier feel on
+              the eyes, particularly with a text heavy interface.
+            </p>
+          }
+        />
+      </ContentBlock>
+
+      <ContentBlock>
+        <TextBlock
+          heading="Progressive Disclosure
+          "
+          text={
+            <p>
+              In order to achieve a less overwhelming screen, only the original
+              note will be shown. The user will have the option to show / hide
+              replies at their discretion. This will ensure more focus and less
+              obligation to take in every piece of information simultaneously.
+            </p>
+          }
+        />
+      </ContentBlock>
+
+      <ContentBlock>
+        <TextBlock
+          heading="Acknowledgements
+          "
+          text={
+            <p>
+              In a bid to reduce redundant comments and keep the notes area
+              compact, Acknowledgements will be implemented to allow users
+              “react” to comments with a set of emojis that show
+              acknowledgement. Users are currently creating notes such as “Thank
+              you” and “Okay”, this is unnecessary and can be substituted with a
+              thumbs up, heart, or hand raised emoji.
+            </p>
+          }
+        />
+      </ContentBlock>
+
+      <ContentBlock>
+        <TextBlock
+          heading="Filtering
+          "
+          text={
+            <p>
+              There needs to be an effective approach to give users the ability
+              to query existing notes. If there are 1000 notes against a job and
+              a user wants to see notes which match a specific condition,
+              manually searching through this is unmanageable and
+              time-consuming. Providing the user with preset filters can solve
+              this issue. This can include but not be limited to read and
+              unread.
+            </p>
+          }
+        />
+      </ContentBlock>
+
+      <ContentBlock>
+        <TextBlock
+          heading="User Availability
+          "
+          text={
+            <p>
+              Avatars should have an indication on whether or not a user is in
+              or out of the office. This could be communicated by a tick or
+              cross icon. Accompanied by a tooltip for further context. This
+              information will be retrieved from Bamboo HR. This solution will
+              allow VIEW users direct information to another user who can pick
+              it up. Eradicating the current problem of missed communication.
+            </p>
+          }
+        />
+      </ContentBlock>
     </div>
   );
 };
