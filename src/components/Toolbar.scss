@@ -9,16 +9,21 @@
   padding-right: 10px;
   margin-top: 25px;
   border-radius: 10px;
-  display: flex;
-  gap: 30px;
-  align-items: center;
   position: relative;
   background-color: white;
   width: fit-content;
   margin: 0 auto;
   max-width: 100%;
-  overflow: scroll;
+
   z-index: 1;
+
+  .toolbar-inner {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    overflow: scroll;
+  }
+
   .selected {
     font-weight: bold;
   }
@@ -48,4 +53,15 @@
   .projectCount {
     margin-left: 5px;
   }
+}
+
+.rightArrow {
+  height: 100%;
+  width: 30px;
+  background: brown;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }

@@ -47,39 +47,42 @@ const Toolbar = ({
     "documents",
     "Personal",
     "front_end",
-
   ];
 
   return (
     <div className="Toolbar">
-      <div
-        className="slider"
-        style={{ width: buttonWidth, left: sliderPos }}
-      ></div>
-      {buttons.map((button) => {
-        const buttonSplit = button.replaceAll("_", " ");
+      <div className="toolbar-inner">
+        <div
+          className="slider"
+          style={{ width: buttonWidth, left: sliderPos }}
+        ></div>
+        {buttons.map((button) => {
+          const buttonSplit = button.replaceAll("_", " ");
 
-        const projectCount = data.filter(
-          (project) => project.type === button
-        ).length;
+          const projectCount = data.filter(
+            (project) => project.type === button
+          ).length;
 
-        return (
-          <button
-            key={button}
-            ref={(el) => (buttonRefs.current[button] = el)}
-            className={`toolbar-button ${
-              selectedFilter === button ? "selected" : ""
-            }`}
-            onClick={() => handleFilterSelection(button)}
-            onMouseEnter={() => {
-              const hoveredWidth = buttonRefs.current[button]?.offsetWidth || 0;
-              console.log("hovered width is: " + hoveredWidth);
-            }}
-          >
-            {buttonSplit}
-          </button>
-        );
-      })}
+          return (
+            <button
+              key={button}
+              ref={(el) => (buttonRefs.current[button] = el)}
+              className={`toolbar-button ${
+                selectedFilter === button ? "selected" : ""
+              }`}
+              onClick={() => handleFilterSelection(button)}
+              onMouseEnter={() => {
+                const hoveredWidth =
+                  buttonRefs.current[button]?.offsetWidth || 0;
+                console.log("hovered width is: " + hoveredWidth);
+              }}
+            >
+              {buttonSplit}
+            </button>
+          );
+        })}
+      </div>
+      <div className="rightArrow"></div>
     </div>
   );
 };
