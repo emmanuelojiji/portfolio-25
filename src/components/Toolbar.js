@@ -12,6 +12,7 @@ const Toolbar = ({
   const [sliderPos, setSliderPos] = useState(0);
 
   const buttonRefs = useRef({});
+  const toolbarRef = useRef(null);
 
   useEffect(() => {
     console.log("selected filter is " + selectedFilter);
@@ -21,7 +22,9 @@ const Toolbar = ({
     const button = selectedFilter;
     const currentButtonWidth = buttonRefs.current[button]?.offsetWidth || 0;
     const currentButtonLeft = buttonRefs.current[button]?.offsetLeft || 0;
-    setSliderPos(currentButtonLeft);
+    const containerScrollLeft = toolbarRef.current?.scrollLeft || 0;
+
+    setSliderPos(currentButtonLeft - containerScrollLeft);
     setButtonWidth(currentButtonWidth);
   }, [selectedFilter]);
 
@@ -41,17 +44,13 @@ const Toolbar = ({
   const buttons = [
     "all",
     "case_studies",
-    "audits",
     "research",
     "explorations",
-    "documents",
-    "Personal",
-    "front_end",
   ];
 
   return (
     <div className="Toolbar">
-      <div className="toolbar-inner">
+      <div className="toolbar-inner" ref={toolbarRef}>
         <div
           className="slider"
           style={{ width: buttonWidth, left: sliderPos }}

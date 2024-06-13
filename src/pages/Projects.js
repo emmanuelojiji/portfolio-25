@@ -27,6 +27,7 @@ const Projects = () => {
               desc={project.desc}
               src={project.img}
               id={project.url}
+              available={project.available}
             />
           ))}
         </div>

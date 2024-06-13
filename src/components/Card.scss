@@ -10,6 +10,11 @@
     background: white;
     border-radius: 10px;
     overflow: hidden;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   img {
@@ -19,7 +24,7 @@
     border-radius: 10px;
     transition: 0.2s ease-in-out;
     display: block;
-    
+
     &:hover {
       transform: scale(1.03);
     }
