@@ -1,23 +1,23 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.scss";
 
-import Project from "./pages/Project";
 import Projects from "./pages/Projects.js";
-import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
 import Header from "./components/Header";
+import WarehouseReporting from "./pages/WarehouseReporting";
+import UsabilitySession from "./pages/UsabilitySession";
+import Notes from "./pages/Notes";
 
 function App() {
   return (
     <div className="App">
-
       <BrowserRouter>
         <Header />
         <Routes>
           <Route path="/" element={<Projects />} />
-          <Route path="/project/:id" element={<Project />} />
+          <Route path="/warehouse-reporting" element={<WarehouseReporting />} />
+          <Route path="/usability-session" element={<UsabilitySession />} />
+          <Route path="/notes" element={<Notes />} />
         </Routes>
-        <footer>Designed & Built by Emmanuel</footer>
       </BrowserRouter>
     </div>
   );

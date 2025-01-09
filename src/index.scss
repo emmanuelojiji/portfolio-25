@@ -14,40 +14,32 @@ html {
   background-color: #fcfcfc;
 }
 
-a{
-color: inherit;
+a {
+  color: inherit;
 }
 
-.text-small {
-  font-size: 14px;
-}
-
-.text-medium {
-  font-size: 22px;
-}
-
-.text-large {
-  font-size: 30px;
-}
-
-.text-grey {
-  color: #7b7b7b;
-}
-
-.border-grey {
-  color: #e1e1e1;
-}
-
-.text-weight-bold {
-  font-weight: 700;
-}
-
-.text-weight-medium {
-  font-weight: 600;
+li{
+  list-style-position: inside;
 }
 
 
 
-.text-weight-thin {
-  font-weight: 300;
+
+.page-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.project-title{
+  margin-bottom: 25px;
+}
+ 
+.content-block{
+  margin-bottom: 50px;
+
+  &:last-child{
+    margin-bottom: 0;
+  }
 }
