@@ -18,28 +18,44 @@ a {
   color: inherit;
 }
 
-li{
+li {
   list-style-position: inside;
 }
 
-
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Radley", serif;
+}
 
 .page-wrap {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   width: 100%;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.project-title{
+.project-title {
   margin-bottom: 25px;
 }
- 
-.content-block{
+
+.content-block {
   margin-bottom: 50px;
 
-  &:last-child{
+  &:last-child {
     margin-bottom: 0;
   }
+
+  h2 {
+    margin-bottom: 25px;
+  }
+}
+
+.final {
+  width: 100%;
+  margin-bottom: 50px;
 }

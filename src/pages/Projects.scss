@@ -28,9 +28,13 @@
 }
 
 .billboard {
-
   padding-top: 120px;
   padding-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  //text-align: center;
   h1 {
     font-weight: 500;
     font-size: 3.5em;
@@ -38,7 +42,11 @@
     font-weight: 400;
     font-style: normal;
     letter-spacing: -3px;
-    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  p{
+    max-width: 1000px;
   }
 }
 
@@ -59,22 +67,48 @@
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+
   gap: 50px;
-  background: #ee4b00;
+  //background: #ff6b26;
   padding: 50px;
-  border: solid 1.5px black;
+  //border: solid 1.5px black;
+  position: relative;
+  transition: 0.2s ease-in-out;
 }
 
 .project-container {
   width: 100%;
   max-width: 700px;
   margin-bottom: 24px;
+  z-index: 1;
+
+  a {
+    font-family: "Radley", serif;
+    font-size: 18px;
+  }
+
+  .project-title {
+    margin-bottom: 12px;
+    display: block;
+    text-transform: capitalize;
+    font-weight: bold;
+    display: block;
+  }
 }
 
-.project-title {
-  margin-bottom: 12px;
-  display: block;
-  text-transform: capitalize;
-  font-weight: bold;
+
+
+.left-hover {
+  height: 100%;
+  width: 100px;
+  background: red;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: transparent;
+}
+
+.left {
+  transform: translateX(2px);
 }

@@ -7,40 +7,42 @@ const Projects = () => {
   const projects = [
     {
       title: "warehouse reporting",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet rutrum enim. Donec vitae metus accumsan, tincidunt ante sit amet, aliquam erat. Maecenas scelerisque facilisis posuere. Nam eu ex eget arcu suscipit lobortis.",
+      desc: "A tool to help managers track and improve their employee performance.",
       url: "/warehouse-reporting",
     },
 
     {
       title: "Usability session",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet rutrum enim. Donec vitae metus accumsan, tincidunt ante sit amet, aliquam erat. Maecenas scelerisque facilisis posuere. Nam eu ex eget arcu suscipit lobortis.",
+      desc: "Driving product insights through targeted usability testing.",
       url: "/usability-session",
     },
 
     {
       title: "Notes",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet rutrum enim. Donec vitae metus accumsan, tincidunt ante sit amet, aliquam erat. Maecenas scelerisque facilisis posuere. Nam eu ex eget arcu suscipit lobortis.",
+      desc: "Streamlining workplace communication for seamless job order management.",
       url: "/notes",
     },
 
     {
       title: "GOV UK",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet rutrum enim. Donec vitae metus accumsan, tincidunt ante sit amet, aliquam erat. Maecenas scelerisque facilisis posuere. Nam eu ex eget arcu suscipit lobortis.",
-      url: "/notes",
+      desc: "A COVID-19 assistance app for streamlined public support.",
+      url: "https://govuk.vercel.app/",
     },
 
     {
       title: "Nandos",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet rutrum enim. Donec vitae metus accumsan, tincidunt ante sit amet, aliquam erat. Maecenas scelerisque facilisis posuere. Nam eu ex eget arcu suscipit lobortis.",
-      url: "/notes",
+      desc: "A Nando’s cocktail launch concept with a bold and interactive design.",
+      url: "https://nandos.vercel.app/",
     },
 
     {
-      title: "Notes",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet rutrum enim. Donec vitae metus accumsan, tincidunt ante sit amet, aliquam erat. Maecenas scelerisque facilisis posuere. Nam eu ex eget arcu suscipit lobortis.",
-      url: "/notes",
+      title: "Netflix Recommend",
+      desc: "An interactive recommendation tool for personalised streaming experiences.",
+      url: "https://n-recommend.vercel.app/",
     },
   ];
+
+  const [hoveredArea, setHoveredArea] = useState("");
 
   return (
     <>
@@ -49,12 +51,23 @@ const Projects = () => {
           Combining research and action to deliver <br></br>thoughtful digital
           solutions.
         </h1>
+        <p>
+          I believe great design begins with understanding people—their needs,
+          their challenges, and the opportunities that lie within them. It’s not
+          just about solving problems, but also creating opportunities and
+          opening up new possibilities.
+        </p>
       </div>
 
-      <div className="projects-container">
+      <div className={`projects-container ${hoveredArea}`}>
+        <div
+          className="left-hover"
+          onMouseOver={() => setHoveredArea("left")}
+          onMouseOut={() => setHoveredArea("")}
+        />
         {projects.map((project) => (
           <div className="project-container">
-            <Link to={project.url} className="project-title">
+            <Link to={project.url} className="project-title" target="_blank">
               {project.title}
             </Link>
             <p>{project.desc}</p>

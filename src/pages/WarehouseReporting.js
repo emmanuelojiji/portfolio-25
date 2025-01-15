@@ -1,7 +1,11 @@
+import final from "../media/reporter-final.png";
+
 const WarehouseReporting = () => {
   return (
     <div className="page-wrap">
       <h1 className="project-title">Warehouse Employee Performance Reporter</h1>
+
+      <img src={final} className="final" />
 
       <div className="content-block">
         <h2>Project Overview</h2>

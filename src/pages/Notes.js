@@ -1,7 +1,10 @@
+import final from "../media/notes-final.png";
 const Notes = () => {
   return (
     <div className="page-wrap">
       <h1 className="project-title">Enhancing the VIEW Notes Screen</h1>
+
+      <img src={final} className="final" />
 
       <div className="content-block">
         <h2>Background</h2>
