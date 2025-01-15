@@ -1,7 +1,11 @@
+import final from "../media/usability-calls-final.png";
+
 const UsabilitySession = () => {
   return (
     <div className="page-wrap">
       <h1 className="project-title">VIEW Usability Session</h1>
+
+      <img src={final} className="final" />
 
       <div className="content-block">
         <h2>Background</h2>
