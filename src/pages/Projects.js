@@ -9,36 +9,42 @@ const Projects = () => {
       title: "warehouse reporting",
       desc: "A tool to help managers track and improve their employee performance.",
       url: "/warehouse-reporting",
+      type: ["design", "company"],
     },
 
     {
       title: "Usability session",
       desc: "Driving product insights through targeted usability testing.",
       url: "/usability-session",
+      type: ["design", "company"],
     },
 
     {
       title: "Notes",
       desc: "Streamlining workplace communication for seamless job order management.",
       url: "/notes",
+      type: ["design", "company"],
     },
 
     {
       title: "GOV UK",
       desc: "A COVID-19 assistance app for streamlined public support.",
       url: "https://govuk.vercel.app/",
+      type: ["front-end", "personal"],
     },
 
     {
       title: "Nandos",
       desc: "A Nando’s cocktail launch concept with a bold and interactive design.",
       url: "https://nandos.vercel.app/",
+      type: ["front-end", "personal"],
     },
 
     {
       title: "Netflix Recommend",
       desc: "An interactive recommendation tool for personalised streaming experiences.",
       url: "https://n-recommend.vercel.app/",
+      type: ["front-end", "personal"],
     },
   ];
 
@@ -60,18 +66,21 @@ const Projects = () => {
       </div>
 
       <div className={`projects-container ${hoveredArea}`}>
-        <div
-          className="left-hover"
-          onMouseOver={() => setHoveredArea("left")}
-          onMouseOut={() => setHoveredArea("")}
-        />
         {projects.map((project) => (
-          <div className="project-container">
-            <Link to={project.url} className="project-title" target="_blank">
-              {project.title}
-            </Link>
-            <p>{project.desc}</p>
-          </div>
+          <Link to={project.url}>
+            <div className="project-container">
+              <div className="type-container">
+                {project.type.map((type) => (
+                  <span className="project-type">{type}</span>
+                ))}
+              </div>
+
+              <h3 className="project-title">{project.title}</h3>
+
+              <p>{project.desc}</p>
+              <p>Read</p>
+            </div>
+          </Link>
         ))}
       </div>
     </>

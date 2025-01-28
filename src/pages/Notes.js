@@ -2,169 +2,168 @@ import final from "../media/notes-final.png";
 const Notes = () => {
   return (
     <div className="page-wrap">
-      <h1 className="project-title">Enhancing the VIEW Notes Screen</h1>
+      <h1>Case Study: Enhancing the Notes Screen for VIEW</h1>
 
-      <img src={final} className="final" />
+      <h2>Background</h2>
+      <p>
+        The Notes screen is an integral feature used by finance, warehouse, and
+        logistics teams within the VIEW platform. It provides a shared space for
+        adding critical job-related information, ensuring visibility across
+        departments. Despite its importance, user research revealed significant
+        challenges: information overload, difficulty locating relevant details,
+        and poor visibility of user availability.
+      </p>
 
-      <div className="content-block">
-        <h2>Background</h2>
-        <p>
-          The Notes screen is a crucial tool used by multiple departments within
-          the business, including finance, warehouse, and logistics teams. It
-          allows users to add important information to jobs, ensuring visibility
-          across departments. However, research conducted revealed issues with
-          organization, the ease of finding relevant information, and user
-          visibility within the screen.
-        </p>
-      </div>
+      <h2>Introduction</h2>
+      <p>
+        This case study delves into the redesign strategy for VIEW’s Notes
+        screen, focusing on addressing user pain points such as cluttered
+        organization and inefficient search functionality. By prioritizing a
+        more intuitive, user-friendly interface, the redesign aims to boost
+        productivity and satisfaction while preserving the core functionality
+        users rely on.
+      </p>
+      <p>
+        During usability testing, users described the screen as "overwhelming,"
+        highlighting the need for a welcoming yet efficient redesign. The
+        updated interface seeks to achieve simplicity, clarity, and a structured
+        workflow.
+      </p>
 
-      <div className="content-block">
-        <h2>Introduction</h2>
-        <p>
-          This case study outlines the strategy developed to improve the user
-          experience of VIEW’s Notes screen. The primary goal was to address key
-          pain points, such as information overload and difficulty in searching
-          for specific notes. By enhancing organization, introducing intuitive
-          features, and streamlining user interactions, the solution aimed to
-          improve work efficiency, user satisfaction, and ultimately save time
-          across departments.
-        </p>
-        <p>
-          The Notes screen was described as "overwhelming" during usability
-          sessions, so the redesign needed to focus on making the area feel more
-          welcoming and user-friendly without losing the familiar layout. This
-          refresh emphasizes simplicity and efficiency while maintaining the
-          screen’s core functionality.
-        </p>
-      </div>
+      <h2>Goals and Objectives</h2>
+      <ul>
+        <li>
+          <strong>Improved Organization:</strong> Enable users to locate
+          information quickly through a more intuitive layout.
+        </li>
+        <li>
+          <strong>Semantic Notes:</strong> Introduce note types with specific
+          purposes to enhance clarity and relevance.
+        </li>
+        <li>
+          <strong>Enhanced Legibility:</strong> Ensure the interface is visually
+          clear and easy to navigate.
+        </li>
+        <li>
+          <strong>User Availability Visibility:</strong> Provide a clear
+          indicator of user availability to streamline communication.
+        </li>
+        <li>
+          <strong>Advanced Search and Filtering:</strong> Implement robust tools
+          for filtering and searching notes.
+        </li>
+      </ul>
 
-      <div className="content-block">
-        <h2>Goals and Objectives</h2>
-        <p>
-          The main objectives for the enhancement of the Notes screen included:
-        </p>
-        <ul>
-          <li>
-            Improved organization: Empowering users to quickly find what they
-            need by making the screen more organized and intuitive.
-          </li>
-          <li>
-            Semantic notes: Notes should have specific purposes, improving their
-            relevance and usability.
-          </li>
-          <li>
-            More legible interface: The interface should be clearer and easier
-            to navigate.
-          </li>
-          <li>
-            User availability visibility: Show when users are available or out
-            of the office.
-          </li>
-          <li>
-            Search and filter capabilities: Users need the ability to filter
-            through notes effectively to find the information they need.
-          </li>
-        </ul>
-      </div>
+      <h2>Proposed Improvements</h2>
+      <h3>1. Note Templates</h3>
+      <p>
+        Standardized templates for common updates (e.g., shipping issues)
+        categorize notes and make them easier to find. Templates reduce
+        ambiguity and allow users to quickly identify critical updates.
+      </p>
 
-      <div className="content-block">
-        <h2>Suggested Improvements</h2>
-        <p>
-          To address the pain points identified through research and feedback,
-          the following improvements were proposed:
-        </p>
-        <ul>
-          <li>
-            Note templates: Important updates, such as shipping or carrier
-            issues, were often lost in a sea of free-text notes. By introducing
-            templates for common types of updates, we could categorize notes and
-            make them easier to search.
-          </li>
-          <li>
-            Whitespace: Adding more whitespace would make the screen easier on
-            the eyes, particularly since it was text-heavy.
-          </li>
-          <li>
-            Sidekick AI assistant: The AI assistant, called Sidekick, felt
-            static and easily overlooked. The plan was to make it feel more
-            dynamic and integrated into the overall experience.
-          </li>
-          <li>
-            Progressive disclosure: To reduce the overwhelming nature of the
-            screen, only the original note would be shown initially, with the
-            option to show or hide replies.
-          </li>
-          <li>
-            Acknowledgements: Instead of users adding redundant comments like
-            “Thank you” or “Okay,” a set of emojis would allow quick reactions
-            to notes without cluttering the screen.
-          </li>
-          <li>
-            Filtering functionality: A better way to search and filter through
-            hundreds of notes was needed. Pre-set filters, such as "read" or
-            "unread" notes, would significantly improve navigation.
-          </li>
-          <li>
-            Username highlighting: Differentiating tagged usernames from regular
-            text would help users easily identify who was involved in the note
-            and what information was being shared.
-          </li>
-          <li>
-            Avatars with status: Avatars would show whether a user was in or out
-            of the office, reducing the issue of missed communication.
-          </li>
-        </ul>
-      </div>
+      <h3>2. Whitespace Usage</h3>
+      <p>
+        Introducing ample whitespace improves readability and reduces visual
+        clutter. A cleaner interface makes text-heavy screens more approachable
+        and less overwhelming.
+      </p>
 
-      <div className="content-block">
-        <h2>Design Decisions</h2>
-        <p>
-          To address the user pain points identified in the research and UX
-          audit, several design decisions were made:
-        </p>
-        <ul>
-          <li>
-            Note templates were introduced to give a structured approach to
-            adding information, ensuring each note has a clear purpose and can
-            be easily filtered.
-          </li>
-          <li>
-            Whitespace was added to create a less cluttered interface, making
-            the screen more digestible and less overwhelming.
-          </li>
-          <li>
-            The Sidekick AI assistant was redesigned to feel more alive and
-            dynamic, ensuring it stood out more on the screen.
-          </li>
-          <li>
-            Progressive disclosure was implemented to allow users to focus only
-            on essential information at first, with the option to dive deeper
-            into replies if necessary.
-          </li>
-          <li>
-            Acknowledgements were added to replace redundant comments, enabling
-            users to react quickly using emojis, saving time and space.
-          </li>
-          <li>
-            A filtering system was introduced to help users search through notes
-            more efficiently by using preset filters like "read" and "unread."
-          </li>
-          <li>
-            Username highlighting was added to differentiate between tagged
-            users and regular text.
-          </li>
-          <li>
-            Avatars with status indicators were introduced to show whether users
-            were available or out of the office, making it easier to direct
-            communication to the right person.
-          </li>
-        </ul>
-      </div>
+      <h3>3. Dynamic Sidekick AI Assistant</h3>
+      <p>
+        The static Sidekick AI was revamped to feel more interactive and
+        integrated. Features like proactive suggestions and contextual
+        assistance enhance its usefulness.
+      </p>
 
-      <div className="content-block">
-        <h2>Conclusion</h2>
-        <p>The refresh of</p>
-      </div>
+      <h3>4. Progressive Disclosure</h3>
+      <p>
+        Only the original note is shown by default, with replies hidden unless
+        expanded. This approach minimizes cognitive overload while preserving
+        access to detailed discussions.
+      </p>
+
+      <h3>5. Acknowledgements</h3>
+      <p>
+        Replacing redundant comments with emoji reactions (e.g., 👍, ✅)
+        streamlines responses. This reduces unnecessary clutter and provides
+        quick, clear feedback.
+      </p>
+
+      <h3>6. Filtering Functionality</h3>
+      <p>
+        New filters, such as "read" or "unread," allow users to efficiently sort
+        through notes. Customizable filters improve the relevance of search
+        results.
+      </p>
+
+      <h3>7. Username Highlighting</h3>
+      <p>
+        Highlighting tagged usernames differentiates them from regular text,
+        aiding collaboration. This ensures users can quickly identify who is
+        involved in specific updates.
+      </p>
+
+      <h3>8. Avatars with Status Indicators</h3>
+      <p>
+        User avatars now display availability (e.g., "in office" or "out of
+        office"). This feature helps direct communication to the appropriate
+        person, reducing missed updates.
+      </p>
+
+      <h2>Design Decisions</h2>
+      <p>
+        To address these improvements, the following design solutions were
+        implemented:
+      </p>
+      <ul>
+        <li>
+          <strong>Structured Templates:</strong> Notes are now categorized by
+          purpose, making them easier to scan and filter.
+        </li>
+        <li>
+          <strong>Whitespace Integration:</strong> A balanced use of whitespace
+          creates a more visually appealing and less overwhelming interface.
+        </li>
+        <li>
+          <strong>Enhanced Sidekick AI:</strong> The assistant is now more
+          prominent and actively supports users by providing real-time
+          suggestions and insights.
+        </li>
+        <li>
+          <strong>Reply Management via Progressive Disclosure:</strong>{" "}
+          Collapsed replies keep the focus on key information while enabling
+          detailed exploration as needed.
+        </li>
+        <li>
+          <strong>Emoji Acknowledgements:</strong> Quick-reaction emojis save
+          time and declutter threads.
+        </li>
+        <li>
+          <strong>Advanced Filters:</strong> Pre-set and customizable filters
+          improve search precision and speed.
+        </li>
+        <li>
+          <strong>User Highlighting:</strong> Differentiated tags for usernames
+          facilitate collaboration and user recognition.
+        </li>
+        <li>
+          <strong>Availability Avatars:</strong> Status-aware avatars promote
+          efficient communication and minimize delays.
+        </li>
+        Ï
+      </ul>
+
+      <h2>Conclusion</h2>
+      <p>
+        The redesigned Notes screen prioritizes organization, clarity, and
+        functionality, addressing user pain points while maintaining
+        familiarity. By implementing these improvements, VIEW ensures that its
+        Notes screen continues to be an indispensable tool for its finance,
+        warehouse, and logistics teams. The focus on simplicity and efficiency
+        empowers users to manage information effectively, fostering better
+        collaboration and saving valuable time across departments.
+      </p>
     </div>
   );
 };
