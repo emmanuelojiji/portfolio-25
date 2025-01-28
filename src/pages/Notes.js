@@ -23,7 +23,7 @@ const Notes = () => {
         <p>
           This case study delves into the redesign strategy for VIEW’s Notes
           screen, focusing on addressing user pain points such as cluttered
-          organization and inefficient search functionality. By prioritizing a
+          organisation and inefficient search functionality. By prioritising a
           more intuitive, user-friendly interface, the redesign aims to boost
           productivity and satisfaction while preserving the core functionality
           users rely on.
@@ -40,7 +40,7 @@ const Notes = () => {
         <h2>Goals and Objectives</h2>
         <ul>
           <li>
-            <strong>Improved Organization:</strong> Enable users to locate
+            <strong>Improved Organisation:</strong> Enable users to locate
             information quickly through a more intuitive layout.
           </li>
           <li>
@@ -66,8 +66,8 @@ const Notes = () => {
         <h2>Proposed Improvements</h2>
         <h3>1. Note Templates</h3>
         <p>
-          Standardized templates for common updates (e.g., shipping issues)
-          categorize notes and make them easier to find. Templates reduce
+          Standardised templates for common updates (e.g., shipping issues)
+          categorise notes and make them easier to find. Templates reduce
           ambiguity and allow users to quickly identify critical updates.
         </p>
 
@@ -88,7 +88,7 @@ const Notes = () => {
         <h3>4. Progressive Disclosure</h3>
         <p>
           Only the original note is shown by default, with replies hidden unless
-          expanded. This approach minimizes cognitive overload while preserving
+          expanded. This approach minimises cognitive overload while preserving
           access to detailed discussions.
         </p>
 
@@ -102,7 +102,7 @@ const Notes = () => {
         <h3>6. Filtering Functionality</h3>
         <p>
           New filters, such as "read" or "unread," allow users to efficiently
-          sort through notes. Customizable filters improve the relevance of
+          sort through notes. Customisable filters improve the relevance of
           search results.
         </p>
 
@@ -129,7 +129,7 @@ const Notes = () => {
         </p>
         <ul>
           <li>
-            <strong>Structured Templates:</strong> Notes are now categorized by
+            <strong>Structured Templates:</strong> Notes are now categorised by
             purpose, making them easier to scan and filter.
           </li>
           <li>
@@ -152,7 +152,7 @@ const Notes = () => {
             time and declutter threads.
           </li>
           <li>
-            <strong>Advanced Filters:</strong> Pre-set and customizable filters
+            <strong>Advanced Filters:</strong> Pre-set and customisable filters
             improve search precision and speed.
           </li>
           <li>
@@ -161,7 +161,7 @@ const Notes = () => {
           </li>
           <li>
             <strong>Availability Avatars:</strong> Status-aware avatars promote
-            efficient communication and minimize delays.
+            efficient communication and minimise delays.
           </li>
           Ï
         </ul>
@@ -170,7 +170,7 @@ const Notes = () => {
       <div className="content-block">
         <h2>Conclusion</h2>
         <p>
-          The redesigned Notes screen prioritizes organization, clarity, and
+          The redesigned Notes screen prioritises organisation, clarity, and
           functionality, addressing user pain points while maintaining
           familiarity. By implementing these improvements, VIEW ensures that its
           Notes screen continues to be an indispensable tool for its finance,

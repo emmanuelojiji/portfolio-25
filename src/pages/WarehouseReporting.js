@@ -10,14 +10,14 @@ const WarehouseReporting = () => {
         <p>
           The warehouse team had been relying on a manual process to track
           employee performance, entering data into spreadsheets and using Google
-          Looker to visualize it. However, their system lacked the granularity
+          Looker to visualise it. However, their system lacked the granularity
           needed to make informed decisions, especially around employee
           productivity trends. The managers wanted not only daily reports but
           insights into performance on an hourly and even minute-by-minute
           basis.
         </p>
         <p>
-          Recognizing the inefficiencies in this approach, I proposed building
+          Recognising the inefficiencies in this approach, I proposed building
           an in-house performance tracking system that would automate data
           collection and provide the granularity they needed. This solution
           would streamline the tracking process, making it easier for warehouse
@@ -118,7 +118,7 @@ const WarehouseReporting = () => {
           <strong>Integration with Existing Systems:</strong> Ensuring seamless
           integration with the warehouse’s current software required close
           coordination with backend developers. We established a robust API
-          pipeline for real-time data synchronization.
+          pipeline for real-time data synchronisation.
         </p>
         <p>
           <strong>Balancing Simplicity with Depth:</strong> The need to provide
@@ -129,7 +129,7 @@ const WarehouseReporting = () => {
       <div className="content-block">
         <h2>Design Decisions</h2>
         <p>
-          The interface was designed to prioritize both usability and
+          The interface was designed to prioritise both usability and
           functionality. Key design choices included:
         </p>
         <ul>
@@ -139,7 +139,7 @@ const WarehouseReporting = () => {
             minute-by-minute data.
           </li>
           <li>
-            <strong>Real-Time Visualization:</strong> Using dynamic charts and
+            <strong>Real-Time Visualisation:</strong> Using dynamic charts and
             tables to provide immediate feedback on performance trends.
           </li>
           <li>
@@ -177,7 +177,7 @@ const WarehouseReporting = () => {
         <p>
           Future enhancements include the development of Employee Profiles,
           which will store detailed performance metrics, averages, and
-          personalized reports. Additionally, predictive analytics could be
+          personalised reports. Additionally, predictive analytics could be
           introduced to forecast productivity trends and proactively address
           potential issues.
         </p>

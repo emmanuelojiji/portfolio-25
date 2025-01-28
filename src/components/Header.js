@@ -6,10 +6,8 @@ const Header = () => {
       <a href="/" className="logo">
         Emmanuel Ojiji
       </a>
-
       <nav>
         <a>Home</a>
-        <a>Contact</a>
       </nav>
     </header>
   );

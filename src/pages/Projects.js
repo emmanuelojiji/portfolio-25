@@ -20,7 +20,7 @@ const Projects = () => {
     },
 
     {
-      title: "Notes",
+      title: "Notes V2",
       desc: "Streamlining workplace communication for seamless job order management.",
       url: "/notes",
       type: ["design", "company"],

@@ -21,7 +21,7 @@ const UsabilitySession = () => {
         <h2>Introduction</h2>
         <p>
           My team and I were tasked with gathering insights from various users
-          across the organization to better understand the challenges they were
+          across the organisation to better understand the challenges they were
           facing within the VIEW system. I was specifically responsible for
           engaging with the Global Trade and Sales teams, who handle critical
           elements of the warehouse process.
