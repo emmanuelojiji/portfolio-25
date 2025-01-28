@@ -2,8 +2,10 @@ import final from "../media/notes-final.png";
 const Notes = () => {
   return (
     <div className="page-wrap">
-      <h1 className="project-title">Case Study: Enhancing the Notes Screen for VIEW</h1>
-
+      <h1 className="project-title">
+        Case Study: Enhancing the Notes Screen for VIEW
+      </h1>
+      <img src={final} />
       <div className="content-block">
         <h2>Background</h2>
         <p>

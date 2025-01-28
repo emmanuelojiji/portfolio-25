@@ -4,7 +4,7 @@ const WarehouseReporting = () => {
   return (
     <div className="page-wrap">
       <h1 className="project-title">Warehouse Employee Performance Reporter</h1>
-
+      <img src={final} />
       <div className="content-block">
         <h2>Background</h2>
         <p>
