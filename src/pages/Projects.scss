@@ -69,7 +69,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   padding: 50px;
-  background: #f5f5f5;
 
   gap: 50px;
   //background: #ff6b26;
@@ -104,6 +103,10 @@
       font-weight: bold;
     }
   }
+}
+
+.read{
+  margin-top: auto;
 }
 
 .project-type {

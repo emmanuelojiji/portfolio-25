@@ -78,7 +78,7 @@ const Projects = () => {
               <h3 className="project-title">{project.title}</h3>
 
               <p>{project.desc}</p>
-              <p>Read</p>
+              <p className="read">Read</p>
             </div>
           </Link>
         ))}
