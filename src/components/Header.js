@@ -7,7 +7,7 @@ const Header = () => {
         Emmanuel Ojiji
       </a>
       <nav>
-        <a>Home</a>
+        <a href="/">Home</a>
       </nav>
     </header>
   );

@@ -27,16 +27,16 @@ const Projects = () => {
     },
 
     {
-      title: "GOV UK",
-      desc: "A COVID-19 assistance app for streamlined public support.",
-      url: "https://govuk.vercel.app/",
-      type: ["front-end", "personal"],
+      title: " UI Prototype with Animated Transitions",
+      desc: "Developed a React prototype to demonstrate UI behaviours for stakeholder feedback",
+      url: "https://eua-refresh.vercel.app/",
+      type: ["front-end", "company"],
     },
 
     {
-      title: "Nandos",
-      desc: "A Nando’s cocktail launch concept with a bold and interactive design.",
-      url: "https://nandos.vercel.app/",
+      title: "GOV UK",
+      desc: "A COVID-19 assistance app for streamlined public support.",
+      url: "https://govuk.vercel.app/",
       type: ["front-end", "personal"],
     },
 
