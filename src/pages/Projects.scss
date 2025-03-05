@@ -28,13 +28,14 @@
 }
 
 .billboard {
-  padding-top: 120px;
-  padding-bottom: 120px;
-  display: flex;
+  padding-top: 270px;
+  padding-bottom: 270px;
+  height: 100vh;
   flex-direction: column;
-  align-items: start;
-  justify-content: start;
   //text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   h1 {
     font-weight: 500;
     font-size: 3.5em;
@@ -42,11 +43,16 @@
     font-style: normal;
     letter-spacing: -3px;
     margin-bottom: 25px;
+    text-align: center;
   }
 
   p {
     max-width: 1000px;
   }
+}
+
+.work-button{
+
 }
 
 .slider-button {

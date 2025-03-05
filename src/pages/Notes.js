@@ -163,7 +163,6 @@ const Notes = () => {
             <strong>Availability Avatars:</strong> Status-aware avatars promote
             efficient communication and minimise delays.
           </li>
-          Ï
         </ul>
       </div>
 

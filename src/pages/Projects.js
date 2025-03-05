@@ -57,13 +57,14 @@ const Projects = () => {
           Combining research and action to deliver <br></br>thoughtful digital
           solutions.
         </h1>
+        <button className="work-button">View Work</button>
       </div>
 
       <div className={`projects-container ${hoveredArea}`}>
         {projects.map((project) => (
           <Link to={project.url}>
             <div className="project-container">
-              <h3 className="project-title">{project.title}</h3> 
+              <h3 className="project-title">{project.title}</h3>
 
               <p>{project.desc}</p>
               <p className="read">Read</p>
