@@ -57,25 +57,13 @@ const Projects = () => {
           Combining research and action to deliver <br></br>thoughtful digital
           solutions.
         </h1>
-        <p>
-          I believe great design begins with understanding people—their needs,
-          their challenges, and the opportunities that lie within them. It’s not
-          just about solving problems, but also creating opportunities and
-          opening up new possibilities.
-        </p>
       </div>
 
       <div className={`projects-container ${hoveredArea}`}>
         {projects.map((project) => (
           <Link to={project.url}>
             <div className="project-container">
-              <div className="type-container">
-                {project.type.map((type) => (
-                  <span className="project-type">{type}</span>
-                ))}
-              </div>
-
-              <h3 className="project-title">{project.title}</h3>
+              <h3 className="project-title">{project.title}</h3> 
 
               <p>{project.desc}</p>
               <p className="read">Read</p>
