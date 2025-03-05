@@ -51,8 +51,7 @@
   }
 }
 
-.work-button{
-
+.work-button {
 }
 
 .slider-button {
@@ -70,16 +69,32 @@
   color: black;
 }
 
+.library {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  gap: 50px;
+  transition: 0.2s ease-in-out;
+  height: 100vh;
+  transform: translateY(100%);
+}
+
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-
+  background: rgb(238, 238, 238);
+  width: 100%;
+  min-height: 100%;
   gap: 50px;
-  //background: #ff6b26;
+}
 
-  //border: solid 1.5px black;
-  position: relative;
-  transition: 0.2s ease-in-out;
+.show-work {
+  transform: translateY(0%);
+}
+
+.hide-work {
+  transform: translateY(100%);
 }
 
 .project-container {

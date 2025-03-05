@@ -50,6 +50,8 @@ const Projects = () => {
 
   const [hoveredArea, setHoveredArea] = useState("");
 
+  const [workClass, setWorkClass] = useState("hide-work");
+
   return (
     <>
       <div className="billboard">
@@ -57,20 +59,30 @@ const Projects = () => {
           Combining research and action to deliver <br></br>thoughtful digital
           solutions.
         </h1>
-        <button className="work-button">View Work</button>
+        <button
+          className="work-button"
+          onClick={() => setWorkClass("show-work")}
+        >
+          View Work
+        </button>
       </div>
 
-      <div className={`projects-container ${hoveredArea}`}>
-        {projects.map((project) => (
-          <Link to={project.url}>
-            <div className="project-container">
-              <h3 className="project-title">{project.title}</h3>
+      <div className={`library ${workClass}`}>
+        <div class="library-header">
+          <p onClick={() => setWorkClass("hide-work")}>Close</p>
+        </div>
+        <div className={`projects-container ${hoveredArea} `}>
+          {projects.map((project) => (
+            <Link to={project.url}>
+              <div className="project-container">
+                <h3 className="project-title">{project.title}</h3>
 
-              <p>{project.desc}</p>
-              <p className="read">Read</p>
-            </div>
-          </Link>
-        ))}
+                <p>{project.desc}</p>
+                <p className="read">Read</p>
+              </div>
+            </Link>
+          ))}
+        </div>
       </div>
     </>
   );

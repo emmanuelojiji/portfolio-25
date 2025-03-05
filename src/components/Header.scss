@@ -4,4 +4,11 @@ header {
   font-weight: bold;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding-left: 2%;
+  padding-right: 2%;
+
 }
