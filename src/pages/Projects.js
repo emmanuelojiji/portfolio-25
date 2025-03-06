@@ -3,7 +3,7 @@ import "./Projects.scss";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Projects = () => {
+const Projects = ({ workClass, setWorkClass }) => {
   const projects = [
     {
       title: "warehouse reporting",
@@ -49,8 +49,6 @@ const Projects = () => {
   ];
 
   const [hoveredArea, setHoveredArea] = useState("");
-
-  const [workClass, setWorkClass] = useState("hide-work");
 
   return (
     <>

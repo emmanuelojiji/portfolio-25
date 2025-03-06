@@ -1,8 +1,12 @@
+import { Link } from "react-router-dom";
 import final from "../media/reporter-final.png";
 
-const WarehouseReporting = () => {
+const WarehouseReporting = ({ setWorkClass }) => {
   return (
     <div className="page-wrap">
+      <div onClick={() => setWorkClass("show-work")}>
+        <Link to="/">Back to library</Link>
+      </div>
       <h1 className="project-title">Warehouse Employee Performance Reporter</h1>
       <img src={final} />
       <div className="content-block">
