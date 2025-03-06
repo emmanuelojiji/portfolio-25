@@ -71,17 +71,20 @@ const Projects = () => {
         <div class="library-header">
           <p onClick={() => setWorkClass("hide-work")}>Close</p>
         </div>
-        <div className={`projects-container ${hoveredArea} `}>
-          {projects.map((project) => (
-            <Link to={project.url}>
+
+        <div className="projects-container">
+          <div className={`grid-container`}>
+            {projects.map((project) => (
               <div className="project-container">
                 <h3 className="project-title">{project.title}</h3>
 
                 <p>{project.desc}</p>
-                <p className="read">Read</p>
+                <Link to={project.url}>
+                  <p className="read">Read</p>
+                </Link>
               </div>
-            </Link>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </>

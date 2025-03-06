@@ -78,14 +78,24 @@
   transition: 0.2s ease-in-out;
   height: 100vh;
   transform: translateY(100%);
+  background: rgb(238, 238, 238);
 }
 
-.projects-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  background: rgb(238, 238, 238);
-  width: 100%;
+.library-header{
+  margin-bottom: 50px;
+}
+
+.projects-container{
   min-height: 100%;
+
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+
+  width: 100%;
+
   gap: 50px;
 }
 
@@ -99,9 +109,9 @@
 
 .project-container {
   width: 100%;
-  max-width: 700px;
-  margin-bottom: 24px;
   z-index: 1;
+  height: max-content;
+  
 
   a {
     font-family: "Radley", serif;
